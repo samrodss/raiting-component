@@ -1,0 +1,199 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--lightGrey: hsl(217, 12%, 63%);
+--mediumGrey: hsl(219, 9%, 32%);
+--darkBlue: hsl(213, 19%, 18%);
+--veryDarkBlue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+}
+
+p{
+    font-size: 15px;
+    color: var(--lightGrey);
+}
+
+h1{
+    color: var(--White);
+    font-weight: 400;
+}
+
+h2{
+    font-size: 18px;
+    color: var(--White);
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+
+}
+
+.mainCard{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    background-color: var(--darkBlue);
+    padding: 1.2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.star{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+   
+}
+
+.mainText>h1{
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.mainText>p{
+    margin-bottom: 1rem;
+    
+}
+
+.ratingBtns{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.ratings{
+    width: 40px;
+    height: 40px;
+    background-color: var(--mediumGrey);
+    color: var(--lightGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rated{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+button{
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: 0;
+    color: var(--White);
+    background-color: var(--Orange);
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: 0.5s ease;
+}
+
+.thxCardWrapper{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color:  hsla(210, 6%, 13%, 0.855) ;
+}
+
+.thxCard{
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+}
+
+.phoneImg{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.phoneImg>img{
+    width: 100px;
+}
+
+.youSelected{
+    width: fit-content;
+    background-color: var(--mediumGrey);
+    color: var(--Orange);
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0 20px;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.thankYouMsg{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.thankYouMsg>h2{
+    margin-bottom: 1rem;
+}
+
+.thankYouMsg>p{
+    font-size: 0.8rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: var(--Orange);
+}
+
+.invisible{
+    display: none;
+}
